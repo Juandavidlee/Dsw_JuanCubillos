@@ -1,0 +1,82 @@
+*{
+    margin: 5px; /*margen de los contenedores, amplia la línea de separación entre cada caja -- borde afuera*/
+    border-radius: 8px;/Bordes de los contenedores, 3px queda casi cuadrado, si aumentamos más redondo*/
+}
+header{
+    background-color: rgb(234, 223, 250);
+    display: flex;
+    justify-content: space-between; /* justificar*/
+    align-items: center;
+}
+.contenedor{ /* Crea una rejilla con 1 fila y 4 columnas)*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+aside{
+    grid-column: 1/2;
+    background-color: rgba(97, 94, 139, 0.911);
+}
+.s1{
+    grid-column: 2/4;
+    background-color: rgb(185, 183, 187);
+}
+
+.s2{
+    grid-column: 4/5;
+    background-color: rgb(185, 183, 187);
+}
+
+.s3{
+    grid-column: 2/5;
+    background-color: rgb(185, 183, 187);
+}
+
+
+footer{
+    text-align: center;
+    background-color: rgb(4, 19, 4);
+    color: white;
+    padding: 10px;
+}
+.justificado{
+    text-align: justify;
+}
+.centrado{
+    text-align: center;
+}
+
+.menu { /* 1era Prueba*/
+    display: flex;
+}
+nav ul {/* 2da Prueba*/
+    list-style: none; /*???*/
+    padding: 5px;
+    color: #fff; /*???*/
+    background: rgb(114, 108, 108);
+}
+.menu li {
+    width: 100%;
+    text-align: center;
+}
+.menu a {
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+background:chocolate;
+height: 25px;
+text-decoration: none;
+}
+
+
+.dropdown li {
+    display: none;
+}
+.menu li:hover .dropdown li {
+    display: block;
+}
+.menu a:hover {
+    background:blueviolet;
+    color: #fff;
+
+}
